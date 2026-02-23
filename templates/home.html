@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>📚 Library Management System</h1>
+    <div class="menu">
+        <a href="{{ url_for('add_book_route') }}" class="button">Add Book</a>
+        <a href="{{ url_for('delete_book_route') }}" class="button">Delete Book</a>
+        <a href="{{ url_for('search_books_route') }}" class="button">Search Books</a>
+        <a href="{{ url_for('add_user_route') }}" class="button">Add User</a>
+        <a href="{{ url_for('borrow_book_route') }}" class="button">Borrow Book</a>
+        <a href="{{ url_for('return_book_route') }}" class="button">Return Book</a>
+        <a href="{{ url_for('view_books_route') }}" class="button">View Books</a>
+        <a href="{{ url_for('view_users_route') }}" class="button">View Users</a>
+        <a href="{{ url_for('view_loans_route') }}" class="button">View Loans</a>
+        <a href="{{ url_for('export_report_route') }}" class="button">Export Report</a>
+    </div>
+</body>
+</html>

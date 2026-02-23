@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📚 Library Management System</h1>
+
+    <div class="container">
+        <h2>Add Book</h2>
+        <form id="add-book-form">
+            <input type="text" id="book-title" placeholder="Book Title" required>
+            <input type="text" id="book-author" placeholder="Author" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <div id="add-book-message"></div>
+    </div>
+
+    <div class="container">
+        <h2>Delete Book</h2>
+        <form id="delete-book-form">
+            <input type="number" id="delete-book-id" placeholder="Book ID" required>
+            <button type="submit">Delete Book</button>
+        </form>
+        <div id="delete-book-message"></div>
+    </div>
+
+    <div class="container">
+        <h2>Search Books</h2>
+        <form id="search-books-form">
+            <input type="text" id="search-query" placeholder="Search by title or author" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="search-results"></div>
+    </div>
+
+    <div class="container">
+        <h2>Add User</h2>
+        <form id="add-user-form">
+            <input type="text" id="user-name" placeholder="Name" required>
+            <input type="email" id="user-email" placeholder="Email" required>
+            <button type="submit">Add User</button>
+        </form>
+        <div id="add-user-message"></div>
+    </div>
+
+    <div class="container">
+        <h2>Borrow Book</h2>
+        <form id="borrow-book-form">
+            <input type="number" id="borrow-user-id" placeholder="User ID" required>
+            <input type="number" id="borrow-book-id" placeholder="Book ID" required>
+            <button type="submit">Borrow Book</button>
+        </form>
+        <div id="borrow-book-message"></div>
+    </div>
+
+    <div class="container">
+        <h2>Return Book</h2>
+        <form id="return-book-form">
+            <input type="number" id="return-user-id" placeholder="User ID" required>
+            <input type="number" id="return-book-id" placeholder="Book ID" required>
+            <button type="submit">Return Book</button>
+        </form>
+        <div id="return-book-message"></div>
+    </div>
+
+    <div class="container">
+        <h2>View Books</h2>
+        <button id="view-books-btn">View All Books</button>
+        <div id="books-list"></div>
+    </div>
+
+    <div class="container">
+        <h2>View Users</h2>
+        <button id="view-users-btn">View All Users</button>
+        <div id="users-list"></div>
+    </div>
+
+    <div class="container">
+        <h2>View Loans</h2>
+        <button id="view-loans-btn">View All Loans</button>
+        <div id="loans-list"></div>
+    </div>
+
+    <div class="container">
+        <h2>Export Report</h2>
+        <button id="export-report-btn">Export Report</button>
+        <div id="export-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
