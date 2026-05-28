@@ -13,7 +13,7 @@
 - [ ] Create ai/predictions.py - Turnout & swing predictions
 
 ## Phase 3: API Routes
-- [ ] Create routes/__init__.py2
+- [ ] Create routes/__init__.py
 - [ ] Create routes/voters.py - Voter CRUD + graph
 - [ ] Create routes/booths.py - Booth management
 - [ ] Create routes/issues.py - Issue tracking
@@ -30,5 +30,3 @@
 ## Phase 5: Testing & Demo Data
 - [ ] Add seed data for demo
 - [ ] Test all endpoints
-
-## Current Status: Starting Phase 1
